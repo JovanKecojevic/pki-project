@@ -1,0 +1,33 @@
+.header-wrapper {
+  margin-top: 10px;
+  position: absolute;
+  display: flex;
+  height: 150px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .logo-wrapper {
+    position: absolute;
+    left: 0;
+    display: flex;
+    height: 100%;
+    width: 300px;
+  }
+
+  .title-wrapper {
+    position: relative;
+    background-color: darken(#f68838, 40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 300px;
+    height: 100%;
+    border-color: #f68838;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 50px;
+    color: antiquewhite;
+  }
+}

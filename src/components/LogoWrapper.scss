@@ -1,0 +1,20 @@
+.logo-image {
+  position: relative;
+  background-image: url("../resources/output-onlinepngtools.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.logo-text {
+  width: 180px;
+  position: absolute;
+  color: black;
+  font-family: 'Poppins', cursive;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-left: 70px;
+}

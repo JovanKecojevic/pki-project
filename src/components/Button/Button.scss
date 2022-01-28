@@ -1,0 +1,16 @@
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  border-color: #f68838;
+  border-width: 3px;
+  border-style: solid;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #f68838;
+  }
+}
