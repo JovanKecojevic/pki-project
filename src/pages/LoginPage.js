@@ -1,8 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import './LoginPage.scss';
 import Button from '../components/Button/Button';
+import { useDispatch } from 'react-redux';
+import * as ActionTypes from '../state/constants/actionTypes';
 
 export default function LoginPage() {
+  const dispatch = useDispatch();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [failedLogin, setFailedLogin] = useState(false);
@@ -18,6 +21,7 @@ export default function LoginPage() {
   }
 
   function handleLoginButtonClick() {
+    dispatch({ type: ActionTypes.USER_LOGGED_IN, payload: true });
     if (username === 'pero' && password === '123') console.log('Uspesno logovanje');
     setFailedLogin(true);
   }

@@ -1,0 +1,5 @@
+export const USER_LOGGED_IN = 'USER_LOGGED_IN';
+
+export const ROUTE_DISTANCE_CHANGED = 'ROUTE_DISTANCE_CHANGED';
+
+export const RESIZE_MAP = 'RESIZE_MAP';
