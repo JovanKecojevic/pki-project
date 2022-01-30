@@ -7,27 +7,52 @@
   align-items: center;
   justify-content: center;
 
-  .logo-wrapper {
+  .left {
     position: absolute;
     left: 0;
+    width: 30%;
     display: flex;
     height: 100%;
-    width: 300px;
+
+    .logo-wrapper {
+      height: 100%;
+      width: 100%;
+    }
   }
 
-  .title-wrapper {
-    position: relative;
-    background-color: darken(#f68838, 40%);
+  .center {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    width: 300px;
+    width: 40%;
     height: 100%;
-    border-color: #f68838;
-    border-width: 3px;
-    border-style: solid;
-    font-size: 50px;
-    color: antiquewhite;
+
+    .title-wrapper {
+      position: relative;
+      background-color: darken(#f68838, 40%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      width: 300px;
+      height: 100%;
+      border-color: #f68838;
+      border-width: 3px;
+      border-style: solid;
+      font-size: 50px;
+      color: antiquewhite;
+    }
   }
+
+  .right {
+    position: absolute;
+    right: 0;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
 }

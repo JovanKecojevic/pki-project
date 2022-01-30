@@ -3,11 +3,9 @@ import './LoginPage.scss';
 import Button from '../components/Button/Button';
 import { useDispatch } from 'react-redux';
 import * as ActionTypes from '../state/constants/actionTypes';
-import {useHistory} from "react-router-dom";
 
-export default function LoginPage() {
+export default function HomePage() {
   const dispatch = useDispatch();
-  const history = useHistory();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [failedLogin, setFailedLogin] = useState(false);
@@ -23,11 +21,8 @@ export default function LoginPage() {
   }
 
   function handleLoginButtonClick() {
-    if (username === 'pero' && password === '123') {
-      console.log('Uspesno logovanje');
-      dispatch({ type: ActionTypes.USER_LOGGED_IN, payload: true });
-      history.replace('/home-page');
-    }
+    dispatch({ type: ActionTypes.USER_LOGGED_IN, payload: true });
+    if (username === 'pero' && password === '123') console.log('Uspesno logovanje');
     setFailedLogin(true);
   }
 

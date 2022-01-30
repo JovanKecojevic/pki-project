@@ -1,0 +1,13 @@
+.home-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: calc(100vh - 150px);
+  top: 160px;
+
+  .home-wrapper {
+
+  }
+}

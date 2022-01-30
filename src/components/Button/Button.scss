@@ -14,3 +14,8 @@
     background-color: #f68838;
   }
 }
+
+.dark {
+  background-color: darken(#f68838, 40%);
+  color: white;
+}

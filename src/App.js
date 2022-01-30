@@ -1,20 +1,38 @@
 import './App.scss';
 import LoginPage from './pages/LoginPage';
-import Header from './components/Header';
 import { useSelector } from 'react-redux';
-import {useEffect} from "react";
+import React, { useState, useEffect} from "react";
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import HomePage from "./pages/HomePage";
+import Header from "./components/Header";
 
 function App() {
-  const userLoggedIn = useSelector(state => state);
+  const userLoggedIn = useSelector(state => state.authState.userLoggedIn);
 
   useEffect(()=> {
-      console.log(userLoggedIn);
+    console.log(userLoggedIn);
+  });
+
+  useEffect(()=> {
+
   }, [userLoggedIn]);
+
+
 
   return (
     <div className="App">
-      <Header />
-      <LoginPage />
+        <Router>
+          <Switch>
+            {!userLoggedIn && <Route path={`/login-page`}>
+              <Header page={'login-page'} />
+              <LoginPage />
+            </Route>}
+            {userLoggedIn && <Route path={`/home-page`}>
+              <Header page={'home-page'} />
+              <HomePage />
+            </Route>}
+          </Switch>
+        </Router>
     </div>
   );
 }
