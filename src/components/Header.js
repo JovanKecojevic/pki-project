@@ -6,6 +6,7 @@ import Button from '../components/Button/Button';
 import * as ActionTypes from "../state/constants/actionTypes";
 import {useHistory} from "react-router-dom";
 import {useDispatch} from "react-redux";
+import HeaderMenuButton from "./HeaderMenuButton/HeaderMenuButton";
 
 export default function Header(props) {
 
@@ -33,7 +34,7 @@ export default function Header(props) {
         break;
       case 'home-page':
          setLeftComponent([<LogoWrapper />]);
-         setCenterComponent([]);
+         setCenterComponent([<HeaderMenuButton />]);
          setRightComponent([<Button dark onClick={handleLogoutClick} text={'Odjavi se'}/>]);
         break;
       default:

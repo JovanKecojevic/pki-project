@@ -1,0 +1,52 @@
+.header-menu-wrapper {
+  display: flex;
+  height: 100%;
+  width: 600px;
+
+  .profile-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 100%;
+
+    .icon-profile {
+      background-image: url("../../resources/profile.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 80%;
+      width: 150px;
+    }
+
+    .icon-book {
+      background-image: url("../../resources/book-icon.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 60%;
+      width: 150px;
+      margin: 0;
+    }
+
+    .button-text {
+      color: black;
+      font-size: 23px;
+      font-family: Poppins, cursive;
+      font-weight: bold;
+    }
+  }
+
+  .profile-button:hover {
+    cursor: pointer;
+    border-color: #f68838;
+    border-width: 3px;
+    border-style: solid;
+
+    .button-text {
+      color: #f68838;
+      font-size: 23px;
+      font-family: Poppins, cursive;
+      font-weight: bold;
+    }
+  }
+
+}
