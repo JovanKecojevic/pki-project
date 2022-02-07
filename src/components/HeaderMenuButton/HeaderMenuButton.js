@@ -9,7 +9,6 @@ export default function HeaderMenuButton() {
     history.push(pageName);
   }
 
-
   return (
     <div className="header-menu-wrapper">
       <div className="profile-button" onClick={() => {goToPage('/profile-page');}}>

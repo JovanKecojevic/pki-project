@@ -23,11 +23,11 @@ function App() {
     <div className="App">
         <Router>
           <Switch>
-            {!userLoggedIn && <Route path={`/login-page`}>
+            {/*!userLoggedIn*/true && <Route path={`/login-page`} key={'login-page'}>
               <Header page={'login-page'} />
               <LoginPage />
             </Route>}
-            {userLoggedIn && <Route path={`/home-page`}>
+            {/*userLoggedIn*/true && <Route path={`/home-page`} key={'home-page'}>
               <Header page={'home-page'} />
               <HomePage />
             </Route>}

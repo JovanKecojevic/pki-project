@@ -1,13 +1,49 @@
 .home-page-wrapper {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   width: 100%;
   position: relative;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 400px);
   top: 160px;
 
-  .home-wrapper {
+  .book-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
 
+    .book-card {
+      display: block;
+      margin: auto;
+      width: 200px;
+      height: 100%;
+      color: #f68838;
+      font-size: 25px;
+      font-weight: bold;
+      font-family: Poppins, cursive;
+
+      .book-image {
+        height: 60%;
+        width: 100%;
+      }
+    }
+
+    .arrow-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 150px;
+      height: 100%;
+
+      .arrow-left {
+        width: 100%;
+      }
+
+      .arrow-right {
+        width: 100%;
+      }
+    }
   }
 }

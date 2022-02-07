@@ -1,11 +1,11 @@
 .header-wrapper {
-  margin-top: 10px;
-  position: absolute;
+  position: relative;
   display: flex;
   height: 150px;
   width: 100%;
   align-items: center;
   justify-content: center;
+  padding-top: 20px;
 
   .left {
     position: absolute;
@@ -34,7 +34,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 20px;
       width: 300px;
       height: 100%;
       border-color: #f68838;
@@ -54,5 +53,4 @@
     align-items: center;
     height: 100%;
   }
-
 }

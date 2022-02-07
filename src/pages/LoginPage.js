@@ -23,11 +23,11 @@ export default function LoginPage() {
   }
 
   function handleLoginButtonClick() {
-    if (username === 'pero' && password === '123') {
+    //if (username === 'pero' && password === '123') {
       console.log('Uspesno logovanje');
       dispatch({ type: ActionTypes.USER_LOGGED_IN, payload: true });
       history.replace('/home-page');
-    }
+    //}
     setFailedLogin(true);
   }
 
