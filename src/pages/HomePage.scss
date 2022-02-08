@@ -1,25 +1,26 @@
 .home-page-wrapper {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   position: relative;
-  height: calc(100vh - 400px);
-  top: 160px;
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: calc(100vh - 250px);
+  top: 50px;
 
   .book-list {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
-    width: 100%;
+    width: auto;
+    height: 300px;
+    padding-bottom: 15px;
 
     .book-card {
+      padding-top: 10px;
       display: block;
       margin: auto;
-      width: 200px;
+      width: 180px;
       height: 100%;
-      color: #f68838;
+      color: #ee3e32;
       font-size: 25px;
       font-weight: bold;
       font-family: Poppins, cursive;
@@ -36,14 +37,36 @@
       justify-content: center;
       width: 150px;
       height: 100%;
+      margin-right: 5px;
+      margin-left: 5px;
 
-      .arrow-left {
+      .arrow {
         width: 100%;
       }
 
-      .arrow-right {
-        width: 100%;
+      .arrow:hover {
+        cursor: pointer;
+        border-color: black;
+        border-width: 5px;
+        border-style: solid;
+        border-radius: 10px;
       }
+    }
+  }
+
+  .recommended {
+    width: auto;
+    display: flex;
+    margin: auto;
+    height: 300px;
+    background-color: slategray;
+    background-blend-mode: screen;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .promotion {
+      width: 300px;
+      font-size: 40px;
     }
   }
 }

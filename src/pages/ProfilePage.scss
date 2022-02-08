@@ -1,0 +1,99 @@
+.profile-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: calc(100vh - 400px);
+  top: 160px;
+
+  .profile-wrapper {
+    position: relative;
+    display: block;
+    height: auto;
+    width: 100%;
+    margin: auto;
+
+    .profile-title {
+      width: 100%;
+      padding-bottom: 5px;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      color: antiquewhite;
+    }
+
+    .form-wrapper {
+      display: flex;
+      justify-content: center;
+
+      .container {
+        height: 400px;
+        width: 600px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 0 0;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "first-name first-name-value"
+        "last-name last-name-value"
+        "address address-value"
+        "phone phone-value"
+        "username username-value";
+      }
+    }
+
+    .last-name {
+      grid-area: last-name;
+    }
+
+    .first-name {
+      grid-area: first-name;
+    }
+
+    .address {
+      grid-area: address;
+    }
+
+    .phone {
+      grid-area: phone;
+    }
+
+    .username {
+      grid-area: username;
+    }
+
+    .first-name-value {
+      grid-area: first-name-value;
+    }
+
+    .last-name-value {
+      grid-area: last-name-value;
+    }
+
+    .address-value {
+      grid-area: address-value;
+    }
+
+    .phone-value {
+      grid-area: phone-value;
+    }
+
+    .username-value {
+      grid-area: username-value;
+    }
+
+    .field {
+      background-color: antiquewhite;
+      border-color: black;
+      border-style: solid;
+      border-width: 3px;
+      display: flex;
+      align-items: center;
+      padding:10px;
+      font-size: 25px;
+    }
+
+  }
+}

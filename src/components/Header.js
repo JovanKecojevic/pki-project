@@ -37,6 +37,11 @@ export default function Header(props) {
          setCenterComponent([<HeaderMenuButton />]);
          setRightComponent([<Button dark onClick={handleLogoutClick} text={'Odjavi se'}/>]);
         break;
+      case 'profile-page':
+         setLeftComponent([<LogoWrapper />]);
+         setCenterComponent([]);
+         setRightComponent([]);
+        break;
       default:
         // code block
     }

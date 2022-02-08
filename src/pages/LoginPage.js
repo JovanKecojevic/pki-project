@@ -4,6 +4,7 @@ import Button from '../components/Button/Button';
 import { useDispatch } from 'react-redux';
 import * as ActionTypes from '../state/constants/actionTypes';
 import {useHistory} from "react-router-dom";
+import data from './../resources/users.json';
 
 export default function LoginPage() {
   const dispatch = useDispatch();
@@ -23,11 +24,18 @@ export default function LoginPage() {
   }
 
   function handleLoginButtonClick() {
-    //if (username === 'pero' && password === '123') {
-      console.log('Uspesno logovanje');
-      dispatch({ type: ActionTypes.USER_LOGGED_IN, payload: true });
-      history.replace('/home-page');
-    //}
+    let foundUser = null;
+    data.users.every(user => {
+      if (user.username === username && user.password === password) {
+        foundUser = user;
+        return false;
+      }
+      return true;
+    });
+    dispatch({type: ActionTypes.USER_LOGGED_IN, payload: foundUser});
+    if(foundUser.type === 'buyer') history.replace('/home-page');
+
+
     setFailedLogin(true);
   }
 

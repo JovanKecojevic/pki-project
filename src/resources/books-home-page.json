@@ -1,9 +1,34 @@
 {
   "books":[
     {
-      "name": "The stranger",
-      "author": "Harlan Coben",
-      "imageName": "the_stranger_vv.jpg"
+      "name": "Tridesete",
+      "author": "Filipe Fonseca",
+      "imageName": "tridesete_v.jpg"
+    },
+    {
+      "name": "Lovac na zmajeve",
+      "author": "Haled Hoseini",
+      "imageName": "lovac_na_zmajeve_-_hiljadu_cudesnih_sunaca_-_a_planine_odjeknuse_vv.jpg"
+    },
+    {
+      "name": "Zanimljiva istorija Srba",
+      "author": "Momcilo Petrovic",
+      "imageName": "zanimljiva_istorija_srba_u_147_prica_vv.jpg"
+    },
+    {
+      "name": "Izgubljena dama",
+      "author": "Vila Kader",
+      "imageName": "izgubljena_dama_vv.jpg"
+    },
+    {
+      "name": "Mi protiv vas",
+      "author": "Fredrik Bakman",
+      "imageName": "mi_protiv_vas_vv.jpg"
+    },
+    {
+      "name": "Zivotinjska farma",
+      "author": "Dzordz Orvel",
+      "imageName": "zivotinjska_farma_vv.jpg"
     },
     {
       "name": "The stranger",
@@ -11,39 +36,14 @@
       "imageName": "the_stranger_vv.jpg"
     },
     {
-      "name": "The stranger",
-      "author": "Harlan Coben",
-      "imageName": "the_stranger_vv.jpg"
+      "name": "Ravaged",
+      "author": "David Wellington",
+      "imageName": "ravaged_v.jpg"
     },
     {
-      "name": "The stranger",
-      "author": "Harlan Coben",
-      "imageName": "the_stranger_vv.jpg"
-    },
-    {
-      "name": "The stranger",
-      "author": "Harlan Coben",
-      "imageName": "the_stranger_vv.jpg"
-    },
-    {
-      "name": "The stranger",
-      "author": "Harlan Coben",
-      "imageName": "the_stranger_vv.jpg"
-    },
-    {
-      "name": "The stranger",
-      "author": "Harlan Coben",
-      "imageName": "the_stranger_vv.jpg"
-    },
-    {
-      "name": "The stranger",
-      "author": "Harlan Coben",
-      "imageName": "the_stranger_vv.jpg"
-    },
-    {
-      "name": "The stranger",
-      "author": "Harlan Coben",
-      "imageName": "the_stranger_vv.jpg"
+      "name": "The empire of gold",
+      "author": "S. A. Chakraborty",
+      "imageName": "the_empire_of_gold_vv.jpg"
     }
   ]
 }

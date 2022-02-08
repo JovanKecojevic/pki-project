@@ -22,7 +22,3 @@ export default function HeaderMenuButton() {
     </div>
   )
 }
-
-HeaderMenuButton.propTypes = {
-
-}

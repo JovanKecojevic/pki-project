@@ -1,0 +1,13 @@
+{
+  "users":[
+    {
+      "firstname": "Jovan",
+      "lastname": "Kecojevic",
+      "type": "buyer",
+      "address": "Bulevar oslobodjenja 7",
+      "phone": "+381659080653",
+      "username": "jovan",
+      "password": "123"
+    }
+  ]
+}
